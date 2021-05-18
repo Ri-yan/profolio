@@ -1,0 +1,380 @@
+/*body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
+body{
+	height: 100%;
+	width: 100%;
+	margin: auto 0;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
+
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
+
+}
+
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover; */
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+/*button for know more*/
+.button {
+  border-radius: 50px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*button for project*/
+.button-project {
+  border-radius: .25rem;
+  background-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+.button-project span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-project span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-project:hover span {
+  padding-right: 25px;
+}
+
+.button-project:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*button for about section*/
+.button-about {
+  border-radius: .25rem;
+  background-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  
+  color: #FFFFFF;
+  text-align: center;
+  margin:5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+.button-about span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-about span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-about:hover span {
+  padding-right: 25px;
+}
+
+.button-about:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.box {
+  
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 12rem 15rem 12rem 15rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  
+
+}
+@media only screen and (max-width: 600px){
+  .box{
+    font-size: 0.8em;
+    padding: 0;
+    }
+    .hero{
+    font-size: 0.6em;
+    padding: 0;
+    }
+    .button{
+    font-size: 2em;
+    padding: 0;
+    
+    }
+  }
+/**************************/
+  
+.grid-wrap{
+  display: grid;
+  grid-gap: 10px ;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  grid-template-rows: 1fr;
+  align-content: center;
+}
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+/*.box1 > img{
+  width: 100%;
+  height: 100%;
+}*/
+.box1{
+  cursor: pointer;
+  background-color: #444;
+  /*padding: 130px;*/
+  margin: 250px;
+  border-radius: 40px;
+
+}
+
+
+@media only screen and (max-width: 600px){
+  .box{
+    font-size: 0.8em;
+    padding: 0;
+    }
+  }
+
+  .projectcard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    font-family: var(--bs-font-sans-serif);
+    flex: 1 0 0%;
+    background-color: #212529;
+    color: #fff;
+
+  }
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+  
+
+
+
+
+
+/*#profile{
+  display: block;
+  width: auto;
+  height: auto;
+}*/
+.border1 {
+  border:solid red;
+ 
+}
+.proimg{
+ display: block;
+ position: relative;
+  border-radius: 500rem;
+    width: 200px;
+    height: auto;
+    border-style: solid;
+    
+    top: 20px; 
+    z-index: 1
+}
+
+.aboutcard{
+    display: flex;
+    flex: 1 0 0%;
+    position: relative;
+    flex-direction: column;
+    align-items: center; 
+    min-width: 0;
+    justify-content: space-around;
+    max-width: 500px; 
+    padding-top: 75px;
+    margin-top: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid white;
+    border-radius: .25rem;
+    font-family: var(--bs-font-sans-serif);
+    background-color: #212529;
+    color: #fff;
+    max-height: 500px;
+    padding: 75px 20px 20px 20px;
+  }
+.about-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    max-width: 600px;
+    
+    margin-top: 0px;
+    height:auto;
+}
+@media only screen and (max-width: 600px){
+  .aboutcard,.about-body{
+    font-size: 0.8em;
+    padding: 0;
+    }
+  }
