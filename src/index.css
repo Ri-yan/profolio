@@ -335,7 +335,7 @@ body{
     height: auto;
     border-style: solid;
     
-    top: 20px; 
+    top: 80px; 
     z-index: 1
 }
 
@@ -378,3 +378,34 @@ body{
     padding: 0;
     }
   }
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+
+}
+.social-links a {
+    flex-direction: column;
+    color: #fff;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1.6rem;
+    text-decoration: none;
+    transition: all .2s ease-in;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f099";
+}
+.fa-twitter
+{
+  content: "\f099";
+}
