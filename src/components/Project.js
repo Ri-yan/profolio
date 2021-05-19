@@ -5,14 +5,16 @@ const Project = ({ name, email, id }) => {
     <div className="projectcard grow">
       <img alt='project' src={`http://spajournalism.com/wp-content/uploads/2017/08/new-job-Pixabay.jpg`} />
       <div className="card-body">
-        <h2>project name</h2>
-        <p>
-        descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescripti
-        descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescripti
-        descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescripti
-        </p>
-        <button className="button-project"><span>know more</span></button>
-      </div>
+        <h2 className="hello">project name</h2>
+        <hr className="phr"/>
+        <p className="Pdiscription">
+        descriptio ndescrip tiondescriptiondescr iptiondescript iondescriptiondescriptiondescri ptiondescripti
+        descript iondescriptiondescrip tiondescriptiond escriptiondescriptionde scriptiondescriptiondescripti
+        descripti ondescriptiondescriptionde scriptiondescription descriptiondescr iptiondescriptiondescripti
+        </p> 
+        <hr className="phr"/>
+        <div className=""><button className="button-project"><span>know more</span></button>
+      </div></div>
     </div>
   );
 }

@@ -8,10 +8,10 @@ import Footer from '../components/Footer';
 class App extends React.Component {
    render(){
 	return(
-          <div className="container3">
+          <div >
             <Hello/>
             <About/>
-            <div id="projects"><ProjectList/></div>
+            <ProjectList/>
             <Footer/>
           </div>
 );

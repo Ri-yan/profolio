@@ -1,140 +1,64 @@
-/*body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-*/
 body{
 	height: 100%;
 	width: 100%;
 	margin: auto 0;
-}
-.container{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
-
-}
-.container2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
-
-}
-.contact
-{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  justify-content:center;
-  align-items: center;
 }
 html{
   
   height: 100%;
   width: fit-content;
 }
-#hero {
-  min-height: 100vh;
+.container{
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  width: 100%;
+}
+/*HELLO SECTION*/
+.container-hello{
   display: flex;
   align-items: center;
-  border-bottom: 0px;
-  background: $white-color;
-  font-weight: 400;
-  color: $dark-blue-text;
-  padding: 0rem 5.6rem;
-  margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
-
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-  }
-
-  .hero-title {
-    font-size: 5.6rem;
-    font-weight: 700;
-    margin-bottom: 3.2rem;
-    text-align: left;
-
-    @include respond(tab-land) {
-      font-size: 4rem;
-    }
-    @include respond(tab-port) {
-      font-size: 3.6rem;
-      text-align: center;
-    }
-    @include respond(phone) {
-      font-size: 3.5rem;
-      line-height: 1.5;
-    }
-    @include respond(phone-xs) {
-      font-size: 2.8rem;
-    }
-  }
-
-  .hero-cta {
-    display: flex;
-
-    @include respond(tab-port) {
-      justify-content: center;
-    }
-
-    & a {
-      font-size: 2.4rem;
-
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
-  }
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(64, 64, 64), rgb(92, 92, 92));
 }
-
-
-/*button for know more*/
-.button {
-  border-radius: 50px;
-  background-color: #f4511e;
+.hello{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Kaushan Script', cursive;
+  font-weight:400;
+  font-size: 2.5em;
+}
+.fd{
+  font-family: 'Kaushan Script', cursive;
+  font-weight:400;
+  font-size: 2.5em;
+  color: white;
+}
+.button-hello {
+  border-radius: 6px;
+  background-color: #000000;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   padding: 10px;
-  width: 200px;
+  width: 185px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 6px;
 }
-
-.button span {
+.button-hello span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
-.button span:after {
+.button-hello span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -142,75 +66,86 @@ html{
   right: -20px;
   transition: 0.5s;
 }
-
-.button:hover span {
-  padding-right: 25px;
+.button-hello:hover span {
+  padding-right: 28px;
 }
-
-.button:hover span:after {
+.button-hello:hover span:after {
   opacity: 1;
   right: 0;
 }
-/*button for project*/
-.button-project {
-  border-radius: .25rem;
-  background-color: #0d6efd;
-  display: inline-block;
-  font-weight: 400;
-  text-decoration: none;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
- 
+@media only screen and (max-width: 900px){
+    .hello{
+    font-size: 1em;
+    padding: 0;
+    }
+    .button-hello{
+    font-size: 1.8em;
+    padding: 1px;
+    
+    }
+  }
+/*****************END*******************/
+
+
+
+/*ABOUT SECTION*/
+.container-about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 5px 20px 5px 20px;
+  background: linear-gradient(75deg, rgb(64, 64, 64), rgb(92, 92, 92));
 }
-.button-project span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.proimg{
+    display: block;
+    position: relative;
+    border-radius: 1rem;
+    width: 250px;
+    height: auto;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60px; 
+    bottom: 40px;
+    z-index: 1;
+}
+.aboutcard{
+display: flex;
+flex: 1 0 0%;
+position: relative;
+flex-direction: column;
+align-items: center; 
+min-width: 0;
+max-width: 480px; 
+max-height: auto;
+margin: auto;
+word-wrap: break-word;
+background-clip: border-box;
+border: 1px solid white;
+border-radius: 0.9rem;
+font-family: var(--bs-font-sans-serif);
+background:#fff; 
+padding: 70px 20px 20px 20px;
 }
 
-.button-project span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button-project:hover span {
-  padding-right: 25px;
-}
-
-.button-project:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/*button for about section*/
 .button-about {
   border-radius: .25rem;
-  background-color: #0d6efd;
+  background-color: #fff;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   padding: .375rem .75rem;
   font-size: 1rem;
-  
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
-  margin:5px;
-  width: 150px;
+  margin:7px;
+  width: 130px;
   transition: all 0.5s;
   cursor: pointer;
- 
+  border-color: solid black;
+  box-shadow: 20px;
 }
 .button-about span {
   cursor: pointer;
@@ -236,76 +171,23 @@ html{
   opacity: 1;
   right: 0;
 }
-.box {
-  
-  display: flex;
-  align-items: center;
-  border-bottom: 0px;
-  background: $white-color;
-  font-weight: 400;
-  color: $dark-blue-text;
-  padding: 12rem 15rem 12rem 15rem;
-  margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  
-
-}
-@media only screen and (max-width: 600px){
-  .box{
-    font-size: 0.8em;
-    padding: 0;
+@media only screen and (max-width: 800px){
+  .aboutcard{
+    font-size: 1em;
+    padding: 80px 20px ;
     }
-    .hero{
-    font-size: 0.6em;
-    padding: 0;
-    }
-    .button{
-    font-size: 2em;
-    padding: 0;
-    
-    }
-  }
-/**************************/
-  
-.grid-wrap{
-  display: grid;
-  grid-gap: 12px ;
-  grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
-  grid-template-rows: 1fr;
-  align-content: center;
-}
-.item-a {
-  grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row1-start;
-  grid-row-end: 3;
-}
-/*.box1 > img{
-  width: 100%;
-  height: 100%;
-}*/
-.box1{
-  cursor: pointer;
-  background-color: #444;
-  /*padding: 130px;*/
-  margin: 250px;
-  border-radius: 40px;
-
-}
-
-
-@media only screen and (max-width: 600px){
-  .box{
-    font-size: 0.8em;
-    padding: 0;
+    .button-about{
+      font-size: 0.9rem;
+      width: 100px;
     }
   }
 
-  .projectcard{
+/***************END********/
+
+
+
+/**************PROJECT SECTION*******************************/
+ .projectcard{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -324,73 +206,102 @@ html{
     flex: 1 1 auto;
     padding: 1rem 1rem;
 }
-  
+.Pdiscription{
+  font-family:georgia;
+  font-size: 1.15rem;
 
-
-
-
-
-/*#profile{
-  display: block;
-  width: auto;
-  height: auto;
-}*/
-.border1 {
-  border:solid red;
- 
 }
-.proimg{
- display: block;
- position: relative;
-  border-radius: 500rem;
-    width: 200px;
-    height: auto;
-    border-style: solid;
-    margin-left: auto;
-    margin-right: auto;
-    top: 80px; 
-    z-index: 1
+.phr{
+  width:300px;
+}
+.grid-wrap{
+  display: grid;
+  grid-gap: 13px ;
+  grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
+  grid-template-rows: 1fr;
+  align-content: center;
+}
+.container-project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
+  max-height: auto;
+  padding: 20px;
+  background: linear-gradient(150deg, rgb(64, 64, 64), rgb(92, 92, 92));
+}
+.button-project {
+  border-radius: .45rem;
+  background-color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  padding: .365rem .65rem;
+  font-size: 1.8rem;
+  font-family: agency fb;
+  border: none;
+  color: #000000;
+  text-align: center;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button-project span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-project span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-project:hover span {
+  padding-right: 25px;
+}
+.button-project:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/***********************END**********************************/
+
+
+/***************FOOTER*****************/
+.contact
+{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+}
+.container-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
+  background: linear-gradient(148deg, rgb(64, 64, 64), rgb(92, 92, 92));
+  color:solid white;
 }
 
-.aboutcard{
-    display: flex;
-    flex: 1 0 0%;
-    position: relative;
-    flex-direction: column;
-    align-items: center; 
-    min-width: 0;
-    justify-content: space-around;
-    max-width: 500px; 
-    padding-top: 90px;
-    margin-top: 0px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    word-wrap: break-word;
-    background-clip: border-box;
-    border: 1px solid white;
-    border-radius: .25rem;
-    font-family: var(--bs-font-sans-serif);
-    background-color: #212529;
-    color: #fff;
-    max-height: 500px;
-    padding: 75px 20px 20px 20px;
-  }
-.about-body {
-    flex: 1 1 auto;
-    padding: 1rem 1rem;
-    max-width: 600px;
-    
-    margin-top: 0px;
-    height:auto;
+a {
+  text-decoration: none;
+  color: white;
 }
-@media only screen and (max-width: 600px){
-  .aboutcard,.about-body{
-    font-size: 0.8em;
-    padding: 0;
-    }
-  }
+.a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+.direct-contact{
+  padding: 30px 30px 0px 30px;
+}
 
 .social-links{
   display: flex;
@@ -409,20 +320,18 @@ html{
     text-decoration: none;
     transition: all .2s ease-in;
 }
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f099";
+
+/**************END******************************/
+.chr{
+  box-shadow: 30px;
+  width: 70vh;
+  align-content: center;
 }
-.fa-twitter
-{
-  content: "\f099";
+
+hr{
+  box-shadow: 30px;
+  align-content: center;
+  color: solid black;
+  width: 420px;
 }
-.main{
-  height: 100%;
-  width: 100%;
-}
+

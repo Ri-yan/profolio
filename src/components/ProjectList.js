@@ -3,17 +3,14 @@ import Project from './Project';
 
 const ProjectList = () => {
   return (
-        <div className="bg-blue tc pa4">
-          <h1>PROJECTS</h1>
+        <div id="projects" className="container-project">
+          <div className="fd pa4">PROJECTS</div>
         		<div className="grid-wrap  tc">
                         <Project/>
                         <Project/>
                         <Project/>
                         <Project/>
-                        <Project/>
-                        <Project/> 
-                        <Project/>
-                        <Project/> 
+                       
             </div>
           </div>
   	);
