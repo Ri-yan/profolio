@@ -14,6 +14,7 @@ const Footer = () => {
           <div class="social-links">
 
                 <a href="#!" target="_blank">
+
                   <i className="fa fa-twitter grow fa-inverse">🦊</i>
                 </a>
 

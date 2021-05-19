@@ -28,11 +28,23 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   height: 100vh;/* vh=viewport it will adjustthe cover secction ac to screen size to make it responsive*/
 
 }
-
+.contact
+{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+}
+html{
+  
+  height: 100%;
+  width: fit-content;
+}
 #hero {
   min-height: 100vh;
   height: 100vh;
@@ -261,8 +273,8 @@ body{
   
 .grid-wrap{
   display: grid;
-  grid-gap: 10px ;
-  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  grid-gap: 12px ;
+  grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
   grid-template-rows: 1fr;
   align-content: center;
 }
@@ -334,7 +346,8 @@ body{
     width: 200px;
     height: auto;
     border-style: solid;
-    
+    margin-left: auto;
+    margin-right: auto;
     top: 80px; 
     z-index: 1
 }
@@ -348,7 +361,7 @@ body{
     min-width: 0;
     justify-content: space-around;
     max-width: 500px; 
-    padding-top: 75px;
+    padding-top: 90px;
     margin-top: 0px;
 
     margin-left: auto;
@@ -408,4 +421,8 @@ body{
 .fa-twitter
 {
   content: "\f099";
+}
+.main{
+  height: 100%;
+  width: 100%;
 }

@@ -17,12 +17,13 @@ const About2 = () => {
                         <a href="#projects">
                           <button className="button-about"><span>Projects</span></button>
                         </a>
-                        <a href="#contact">
-                          <button className="button-about"><span>Contact</span></button>
-                        </a>
                         <a href="#top">
                           <button className="button-about"><span>Resume</span></button>
                         </a>
+                        <a href="#contact">
+                          <button className="button-about"><span>Contact</span></button>
+                        </a>
+                        
                   </div>
       </div>
 </div>

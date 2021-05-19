@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import React from 'react';
 import About from '../components/About';
 import ProjectList from '../components/ProjectList';
@@ -8,11 +8,11 @@ import Footer from '../components/Footer';
 class App extends React.Component {
    render(){
 	return(
-          <div>
+          <div className="container3">
             <Hello/>
             <About/>
             <div id="projects"><ProjectList/></div>
-            <section><Footer/> </section>
+            <Footer/>
           </div>
 );
  }
