@@ -34,6 +34,7 @@ html{
   font-weight:400;
   font-size: 2.9em;
   color: white;
+  margin-top: 50px;
 }
 .button-hello {
   border-radius: 6px;
@@ -125,6 +126,7 @@ font-family: var(--bs-font-sans-serif);
 background:#fff; 
 padding: 60px 20px 0px 20px;
 bottom: 30px;
+margin-bottom: 250px;
 }
 
 .button-about {
@@ -197,6 +199,7 @@ container-about
     flex: 1 0 0%;
     background-color: #212529;
     color: #fff;
+    min-height: 520px;
   }
 .card-body {
     flex: 1 1 auto;
@@ -340,8 +343,10 @@ hr{
   color: solid black;
   width: 420px;
 }
-
+@media only screen and (max-width: 540px){
 .container-hello,.container-about,.container-project,.container-footer{
   min-width: 550px;
-
+  min-height: 1250px;
+  max-height: 100vh;
+}
 }

@@ -1,7 +1,7 @@
 export const Pro = [
   {
     id: 1,
-    img_id:'../asset/P1.jpg',
+    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P1.jpg?raw=true',
     project_name: 'Css Background Generator',
     discription: 'It Generates attractive Gradient Css Backgrounds.',
     link: 'https://github.com/Ri-yan/css-gradient-background-genrator'
@@ -21,14 +21,14 @@ export const Pro = [
     link: 'https://github.com/Ri-yan/startup-landingpage'
   },
   {
-    id: 5,
+    id: 4,
     img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P4.png?raw=true',
     project_name: 'Robofriends-redux',
     discription: 'Robofriends with optimizations of redux',
     link: 'https://github.com/Ri-yan/robofriends-redux'
   },
   {
-    id: 4,
+    id: 5,
     project_name: 'Profolio',
     img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P5.png?raw=true',
     discription: 'Cool responsive Profile ',
