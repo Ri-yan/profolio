@@ -4,10 +4,11 @@ import About from '../components/About';
 import ProjectList from '../components/ProjectList';
 import Hello from '../components/Hello';
 import Footer from '../components/Footer';
+
 class App extends React.Component {
    render(){
 	return(
-          <div >
+          <div className="container">
             <Hello/>
             <About/>
             <ProjectList/>
@@ -16,6 +17,5 @@ class App extends React.Component {
 );
  }
 }
-
 export default App;
-            // <div className="container2 bg-purple" id="about"><About2/></div>
+   

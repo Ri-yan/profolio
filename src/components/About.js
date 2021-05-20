@@ -4,9 +4,9 @@ const About = () => {
   return (
 <div className="container-about" id="about">
   <div className="fd">About Me</div>
-    <img  className="proimg" alt="profile" src="https://media.wired.com/photos/5926c126af95806129f50868/master/w_2560%2Cc_limit/SuperMarioRunTA.jpg" />
+    <img  className="proimg" alt="profile" src="https://github.com/Ri-yan/profolio/blob/main/src/asset/profile.jpg?raw=true" />
       <div className="aboutcard">
-            <span className="b"><h3>Mario(SuperMario)</h3></span>
+            <span className="b"><h3>Mohd Riyan</h3></span>
             <span>Student</span>
             <div className="b"><p>I am studying for Engineering in Computer Science in the Department of B.Tech Computer Sciences and Engineering at the Integral University. I expect to graduate in Spring, 2023.</p></div>
                 <hr/>

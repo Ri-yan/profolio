@@ -1,10 +1,12 @@
 import React from 'react';
 import Project from './Project';
 import Pro from './constant';
+import Scroll from './Scroll';
 const ProjectList = ({Projects}) => {
   return (
       <div id="projects" className="container-project">
         <div className="fd pa3">PROJECTS</div>
+        <Scroll>
         	<div className="grid-wrap  tc">
           {
             Pro.map((project_name, i) => {
@@ -21,23 +23,9 @@ const ProjectList = ({Projects}) => {
             })
           }
         </div>
+        </Scroll>
       </div>
   	);
 }
 
 export default ProjectList;
-{/*<div>
-      {
-        Pro.map((project_name, i) => {
-          return (
-            <Project
-              key={i}
-              id={Pro[i].id}
-              project_name={Pro[i].project_name}
-              description={Pro[i].description}
-              link={Pro[i].link}
-              />
-          );
-        })
-      }
-    </div>*/}

@@ -9,7 +9,7 @@ export const Pro = [
   {
     id: 2,
     project_name: 'Robofriends',
-    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P2.png?raw=true',
+    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P4.png?raw=true',
     discription: 'Consist of Interative Cards and search box.',
     link: 'https://github.com/Ri-yan/robofriends'
   },
@@ -36,21 +36,21 @@ export const Pro = [
   },
   {
     id: 6,
-    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P.png?raw=true',
-    project_name: 'Project 6',
-    discription: 'Adding Soon',
+    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P6.jpg?raw=true',
+    project_name: 'Sample Website',
+    discription: 'Totally responsive structure made using theconcept of Flexbox and Grid',
     link: 'Karley_Dach@jasper.info'
   },
   {
     id: 7,
-    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P.png?raw=true',
+    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P.jpg?raw=true',
     project_name: 'Project 7',
     discription: 'Adding Soon',
     link: 'Telly.Hoeger@billy.biz'
   },
   {
     id: 8,
-        img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P.png?raw=true',
+    img_id:'https://github.com/Ri-yan/profolio/blob/main/src/asset/P.jpg?raw=true',
     project_name: 'Project 8',
     discription: 'Adding Soon',
     link: 'Sherwood@rosamond.me'

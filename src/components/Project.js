@@ -1,9 +1,8 @@
  import React from 'react';
-import Pro from './constant';
 
 const Project = ({ id,project_name,discription,link,img_id }) => {
   return (
-    <div className="projectcard grow">
+    <div className="projectcard">
       <img alt='project' className="grow" src={img_id} />
       <div className="card-body">
         <h2 className="hello">{project_name}</h2>
