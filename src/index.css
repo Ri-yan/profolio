@@ -7,13 +7,10 @@ body{
 html{
   
   height: 100%;
-  width: fit-content;
+  width: 100%;
 }
 .container{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
+  display: block;
 }
 /*HELLO SECTION*/
 .container-hello{
@@ -94,8 +91,8 @@ html{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  padding: 5px 20px 5px 20px;
+  height: 100%;
+  padding: 5px 20px 50px 20px;
   background: linear-gradient(75deg, rgb(64, 64, 64), rgb(92, 92, 92));
 }
 .proimg{
@@ -119,7 +116,7 @@ flex-direction: column;
 align-items: center; 
 min-width: 0;
 max-width: 480px; 
-max-height: auto;
+height: auto;
 margin: auto;
 word-wrap: break-word;
 background-clip: border-box;
@@ -327,7 +324,6 @@ a {
   width: 70vh;
   align-content: center;
 }
-
 hr{
   box-shadow: 30px;
   align-content: center;

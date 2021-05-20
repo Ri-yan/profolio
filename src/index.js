@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './container/App';
+import Pro from './components/constant';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 ReactDOM.render(

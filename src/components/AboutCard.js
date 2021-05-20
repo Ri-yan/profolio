@@ -1,9 +1,9 @@
 import React from 'react';
 
-const About = () => {
+const AboutCard = () => {
   return (
-<div className="container-about" id="about">
-  <div className="fd">About Me</div>
+    <div>
+<div className="fd">About Me</div>
     <img  className="proimg" alt="profile" src="https://media.wired.com/photos/5926c126af95806129f50868/master/w_2560%2Cc_limit/SuperMarioRunTA.jpg" />
       <div className="aboutcard">
             <span className="b"><h3>Mario(SuperMario)</h3></span>
@@ -16,18 +16,18 @@ const About = () => {
                 <hr/>
                   <div className="pa4 flex">
                         <a href="#projects">
-                          <button className="button-about b"><span>Projects</span></button>
+                          <button className="button-about"><span>Projects</span></button>
                         </a>
                         <a href="#top">
-                          <button className="button-about b"><span>Resume</span></button>
+                          <button className="button-about"><span>Resume</span></button>
                         </a>
                         <a href="#contact">
-                          <button className="button-about b"><span>Contact</span></button>
+                          <button className="button-about"><span>Contact</span></button>
                         </a>
                   </div>
+       </div>
       </div>
-</div>
-);
+      );
 }
 
-export default About;
+export default AboutCard;
