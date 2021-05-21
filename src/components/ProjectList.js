@@ -24,6 +24,8 @@ const ProjectList = ({Projects}) => {
           }
         </div>
         </Scroll>
+                <div className="fd pa5 tc grow" style={{'font-size':'20px'}}><a href="#contact">Contact Section</a></div>
+
       </div>
   	);
 }
