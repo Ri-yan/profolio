@@ -7,26 +7,26 @@ const Footer = () => {
   <footer className="pa2 tc ">
         <div className="hello">
             <a href="#top" >
-              <i className="a" ><span ><p>Back to Top</p></span></i>
+              <i className="a grow" ><span ><p className="grow">Back to Top</p></span></i>
             </a>
-            <div className="direct-contact"> <h1>Contact .</h1></div>
+            <div className="direct-contact grow "> <h1>Contact .</h1></div>
           <div class="social-links">
 
                 <a href="#!" target="_blank">
 
-                  <i className="fa  grow fa-inverse"><SocialIcon network="twitter" fgColor="#fff"  bgColor="#000000" style={{ height: 50, width: 50 }}/></i>
+                  <i className="fa"><SocialIcon network="twitter" className="grow" fgColor="#fff"  bgColor="#000000" style={{ height: 50, width: 50 }}/></i>
                 </a>
 
                 <a href="#!" target="_blank">
-                  <i className="fa  grow fa-inverse"><SocialIcon network="instagram" fgColor="#fff"  bgColor="#000000"/></i>
+                  <i className="fa"><SocialIcon network="instagram"  className="grow" fgColor="#fff"  bgColor="#000000"/></i>
                 </a>
 
                 <a href="#!" target="_blank">
-                  <i className="fa  grow fa-inverse"><SocialIcon network="linkedin" fgColor="#fff" bgColor="#000000"/></i>
+                  <i className="fa "><SocialIcon network="linkedin"  className="grow" fgColor="#fff" bgColor="#000000"/></i>
                 </a>
 
                 <a href="https://github.com/Ri-yan">
-                  <i className="fa  grow fa-inverse"><SocialIcon network="github" fgColor="#fff" bgColor="#000000"/></i>
+                  <i className="fa "><SocialIcon network="github"  className="grow" fgColor="#fff" bgColor="#000000"/></i>
                 </a>
           </div>
           <hr className="chr"/>

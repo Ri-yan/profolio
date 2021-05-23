@@ -19,6 +19,7 @@ html{
   flex-direction: column;
   height: 100vh;
   background: linear-gradient(150deg, rgb(64, 64, 64), rgb(92, 92, 92));
+
 }
 .hello{
   color: white;
@@ -34,7 +35,7 @@ html{
   font-weight:400;
   font-size: 2.9em;
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .button-hello {
   border-radius: 6px;
@@ -92,7 +93,7 @@ html{
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  padding: 5px 20px 50px 20px;
+  padding: 5px 60px 50px 60px;
   background: linear-gradient(75deg, rgb(64, 64, 64), rgb(92, 92, 92));
 }
 .proimg{
@@ -105,7 +106,7 @@ html{
     border-style: outset;
     margin-left: auto;
     margin-right: auto;
-    top: 40px; 
+    top: 20px; 
     z-index: 1;
 }
 .aboutcard{
@@ -345,8 +346,33 @@ hr{
 }
 @media only screen and (max-width: 540px){
 .container-hello,.container-about,.container-project,.container-footer{
-  min-width: 570px;
+    min-height: -webkit-fill-available;
+
   min-height: 1250px;
-  max-height: 100vh;
 }
+}
+#root{
+  height: 100vh;
+  width:100vw;
+}
+.n{
+      display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+}
+.c{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+}
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
 }
