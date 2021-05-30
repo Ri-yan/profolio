@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import React from 'react';
 import About from '../components/About';
 import ProjectList from '../components/ProjectList';

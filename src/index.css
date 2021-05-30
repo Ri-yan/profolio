@@ -212,7 +212,7 @@ container-about
 
 }
 .phr{
-  width:300px;
+  width:auto;
 }
 .grid-wrap{
   display: grid;
