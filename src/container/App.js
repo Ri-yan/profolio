@@ -7,6 +7,8 @@ import Footer from '../components/Footer';
 import Zoom from 'react-reveal/Zoom';
 import Tada from 'react-reveal/Tada';
 import Jump from 'react-reveal/Jump';
+
+import A from '../components/A';
 // import ScrollReveal from 'scrollreveal';
 
 class App extends React.Component {
@@ -16,8 +18,9 @@ class App extends React.Component {
 			<Zoom>
             <Hello/>
             </Zoom>
+            <A/>
             <Jump>
-            <About/>
+           {/* <About/>*/}
             </Jump>
             <Jump>
             <ProjectList/>

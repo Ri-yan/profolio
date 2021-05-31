@@ -18,6 +18,7 @@ html{
   justify-content: space-around;
   flex-direction: column;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(150deg, rgb(64, 64, 64), rgb(92, 92, 92));
 
 }
@@ -347,8 +348,11 @@ hr{
 @media only screen and (max-width: 540px){
 .container-hello,.container-about,.container-project,.container-footer{
     min-height: -webkit-fill-available;
-
-  min-height: 1250px;
+    min-height: 1250px;
+    /*height: calc(var(--vh, 1vh) * 100);*/
+}
+.container-about{
+  margin-bottom: 400px;
 }
 }
 #root{
